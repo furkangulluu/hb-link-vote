@@ -1,4 +1,4 @@
-# hepsi-burada
+# HB Link Vote App
 
 ## Project setup
 ```
