@@ -34,7 +34,4 @@ export default new Vuex.Store({
       state.sortBy = sorting
     }
   },
-  actions: {
-
-  }
 })
