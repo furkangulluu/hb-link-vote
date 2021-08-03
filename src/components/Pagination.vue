@@ -107,14 +107,12 @@ export default {
   },
   computed: {
     startPage() {
-      if (this.currentPage === 1) {
+      if (this.currentPage === 1 || this.currentPage === 2) {
         return 1;
       }
-
       if (this.currentPage === this.totalPages) {
         return this.totalPages - this.maxVisibleButtons + 1;
       }
-
       return this.currentPage - 1;
     },
     endPage() {
@@ -125,14 +123,12 @@ export default {
     },
     pages() {
       const range = [];
-
       for (let i = this.startPage; i <= this.endPage; i += 1) {
         range.push({
           name: i,
           isDisabled: i === this.currentPage
         });
       }
-
       return range;
     },
     isInFirstPage() {
